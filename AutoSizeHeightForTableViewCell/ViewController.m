@@ -21,7 +21,9 @@
  *   可以不用一條Constraint從頭連到底，
  *   但至少像爬樓梯一樣要有Constraint可以往下。
  * 2.連通往下的Constraint一定必須設定在會依據不同data而增長的元件上。
- * 3.設定好Constraint後，
+ * 3.在設置Constraint之前，在 UITableViewCell的size inspector裡面，
+ *   Row Height要是Default，而不是custom，不然之後都會優先使用custom的數值。
+ * 4.設定好Constraint後，
  *   程式碼只需設定estimatedRowHeight &
  *   tableView.rowHeight = UITableViewAutomaticDimension。
  */
