@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="KGk-i7-Jjw" customClass="TableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="452" height="156"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="452" height="155"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olj-XF-pMi">
+                        <rect key="frame" x="198" y="8" width="236" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5678" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68G-9J-8gN">
+                        <rect key="frame" x="198" y="34" width="236" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="太魯閣" translatesAutoresizingMaskIntoConstraints="NO" id="tR8-Hx-aSS">
+                        <rect key="frame" x="8" y="8" width="180" height="140"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="tR8-Hx-aSS" secondAttribute="height" multiplier="9:7" id="9w9-vo-EaL"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="68G-9J-8gN" firstAttribute="top" secondItem="Olj-XF-pMi" secondAttribute="bottom" constant="5" id="0qN-hH-QLZ"/>
+                    <constraint firstItem="Olj-XF-pMi" firstAttribute="leading" secondItem="tR8-Hx-aSS" secondAttribute="trailing" constant="10" id="Fo7-Tb-7VJ"/>
+                    <constraint firstItem="68G-9J-8gN" firstAttribute="trailing" secondItem="Olj-XF-pMi" secondAttribute="trailing" id="Gvj-5R-lpU"/>
+                    <constraint firstItem="68G-9J-8gN" firstAttribute="leading" secondItem="Olj-XF-pMi" secondAttribute="leading" id="Hnw-kB-o1K"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Olj-XF-pMi" secondAttribute="trailing" constant="10" id="KLg-f2-yX8"/>
+                    <constraint firstItem="tR8-Hx-aSS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="LB2-7z-xrK"/>
+                    <constraint firstItem="tR8-Hx-aSS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="TLB-3p-qnv"/>
+                    <constraint firstItem="Olj-XF-pMi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="gGS-S3-cy5"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="68G-9J-8gN" secondAttribute="bottom" constant="92" id="kCW-2M-mH0"/>
+                    <constraint firstItem="tR8-Hx-aSS" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="180:452" id="qm9-80-QiJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="firstLabel" destination="Olj-XF-pMi" id="HFG-nI-n36"/>
+                <outlet property="mainImageView" destination="tR8-Hx-aSS" id="vpe-v1-KFk"/>
+                <outlet property="secondLabel" destination="68G-9J-8gN" id="S71-g8-cou"/>
+            </connections>
+            <point key="canvasLocation" x="91" y="108"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="太魯閣" width="284" height="177"/>
+    </resources>
+</document>
